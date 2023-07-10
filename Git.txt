@@ -1,0 +1,62 @@
+What is Git -
+	Git is a version control system that is used for tracking changes in computer files and coordinating work on those files among multiple people.
+
+Basic Commands -
+1.set a name that is identifiable for credit when review version history
+-> git config --global user.name “[firstname lastname]”
+
+2.set an email address that will be associated with each history marker.
+-> git config --global user.email “[valid-email]”
+
+----------------------------------------------------------------------
+
+3.initialize an existing directory as a Git repository.
+-> git init 
+
+4.retrieve an entire repository from a hosted location via URL.
+-> git clone [URL] 
+
+-----------------------------------------------------------------------
+
+5.show modified files in working directory, staged for your next commit.
+-> git status 
+
+6.add a file as it looks now to your next commit (stage).
+-> git add [file] 
+
+7.unstage a file while retaining the changes in working directory.
+-> git reset [file] 
+
+8.diff of what is changed but not staged
+-> git diff
+
+9.diff of what is staged but not yet committed
+-> git diff --staged
+
+--------------------------------------------------------------------------
+
+10.list your branches, a* will appear next to the currently active branch.
+-> git branch
+
+11. create a new branch at the current commit.
+-> git branch [branch-name]
+
+12. switch to another branch and check it out into your working directory.
+-> git checkout
+
+
+13.merge the specified branch’s history into the current one.
+-> git merge [branch]
+
+14. show all commits in the current branch’s history.
+-> git log
+
+15.show any object in Git in human-readable format.
+-> git show [SHA]
+
+---------------------------------------------------------------------------
+
+16. delete the file from project and stage the removal for commit.
+-> git rm [file]
+
+
